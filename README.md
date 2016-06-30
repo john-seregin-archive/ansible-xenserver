@@ -1,2 +1,2 @@
-# ansible-xenserver
-Ansible role for configuration and update Citrix Xenserver 
+#ansible-xenserver
+Install, setup and update Citrix XenServer 6.5

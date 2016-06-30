@@ -1,0 +1,9 @@
+- debug: var="{{ update }}"
+
+- get_url: url="{{ url }}" dest=/tmp
+
+- command: "unzip -n /tmp/{{ update }}.zip -d /tmp"
+
+- command: "xe patch-upload file-name=/tmp/{{ update }}.xsupdate"
+  
+- command: "xe patch-pool-apply uuid={{ uuid }}"

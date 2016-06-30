@@ -1,0 +1,203 @@
+- command: xe patch-list
+  register: updates
+  tags: update
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1
+  vars:
+    update: XS65ESP1
+    url: http://downloadns.citrix.com.edgesuite.net/10340/XS65ESP1.zip
+    uuid: 7f2e4a3a-4098-4a71-84ff-b0ba919723c7
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1003
+  vars:
+    update: XS65ESP1003
+    url: http://downloadns.citrix.com.edgesuite.net/10597/XS65ESP1003.zip
+    uuid: 3a7f4772-3039-40ad-a56d-29917b005d26
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1004
+  vars:
+    update: XS65ESP1004
+    url: downloadns.citrix.com.edgesuite.net/10663/XS65ESP1004.zip
+    uuid: b4814859-81ae-4ad9-9da9-7bf74737db05
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1005
+  vars:
+    update: XS65ESP1005
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX201514/XS65ESP1005.zip
+    uuid: fe594bba-a0f7-4643-9429-8443d3a9e018
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1008
+  vars:
+    update: XS65ESP1008
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX201637/XS65ESP1008.zip
+    uuid: d91b3557-f1bf-4083-bd6f-80a19d983775
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1009
+  vars:
+    update: XS65ESP1009
+    url: https://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX201741/XS65ESP1009.zip
+    uuid: 2fb21b81-a23a-4891-be63-9dce663953f3
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1010 
+  vars:
+    update: XS65ESP1010 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX201974/XS65ESP1010.zip
+    uuid: 4ef6bab2-6d13-440f-9c9c-5ee4ffad7136
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1011
+  vars:
+    update: XS65ESP1011
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX202074/XS65ESP1011.zip
+    uuid: 21071615-4f2b-4d62-b4e4-027b3011fece
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1012 
+  vars:
+    update: XS65ESP1012 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX202481/XS65ESP1012.zip
+    uuid: 6bbc7c2c-c47f-4649-8911-be66ccf94bcf
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1013
+  vars:
+    update: XS65ESP1013
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX202423/XS65ESP1013.zip
+    uuid: 1befc0c9-1019-45ee-a621-a1ae9972b556
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1014 
+  vars:
+    update: XS65ESP1014 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX202439/XS65ESP1014.zip
+    uuid: 3cabcf56-a87a-4f7c-9103-61c7cea72799
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1016 
+  vars:
+    update: XS65ESP1016 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX202619/XS65ESP1016.zip
+    uuid: 42a23fe2-651e-4f84-b306-e8501029c35d
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1019 
+  vars:
+    update: XS65ESP1019 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX203494/XS65ESP1019.zip
+    uuid: 3e6711d0-8449-4bb7-b321-f4290fcbbdb1
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1020 
+  vars:
+    update: XS65ESP1020 
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX204047/XS65ESP1020.zip
+    uuid: c3520494-be00-4133-afb3-adf8ab5edb11
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1021
+  vars:
+    update: XS65ESP1021
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX204053/XS65ESP1021.zip
+    uuid: 7fea2d85-7ce1-428c-a92f-57e37551d6f1
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1022
+  vars:
+    update: XS65ESP1022
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX205228/XS65ESP1022.zip
+    uuid: d9862b7f-9be6-4672-b9a8-4f52f776fd03
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1023
+  vars:
+    update: XS65ESP1023
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX205355/XS65ESP1023.zip
+    uuid: a424dfe5-8be8-4bd6-a49e-62620e369a43
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1024
+  vars:
+    update: XS65ESP1024
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX207337/XS65ESP1024.zip
+    uuid: e28bb0ae-e43f-46d9-9147-c7dc712508eb
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1025
+  vars:
+    update: XS65ESP1025
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX208513/XS65ESP1025.zip
+    uuid: b2aa4a60-df03-4cf6-b50d-70847558649d
+  when: updates.stdout.find('{{ update }}') == -1
+  
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1026
+  vars:
+    update: XS65ESP1026
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX209355/XS65ESP1026.zip
+    uuid: a8f7384b-7530-4752-95cc-ebaece15d78a
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1027
+  vars:
+    update: XS65ESP1027
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX212401/XS65ESP1027.zip
+    uuid: a2de7b16-4773-4aa5-be49-ea2888ff3edb
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1028
+  vars:
+    update: XS65ESP1028
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX209498/XS65ESP1028.zip
+    uuid: 0752c187-ff21-4038-9ae0-45c87320a6d0
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1029
+  vars:
+    update: XS65ESP1029
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX213494/XS65ESP1029.zip
+    uuid: 23599ee2-c309-428b-84e7-d2eced0f62a2
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  tags: update,XS65ESP1,XS65ESP1032
+  vars:
+    update: XS65ESP1032
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX212747/XS65ESP1032.zip
+    uuid: f1323e2f-f477-4676-83a3-f5008e7d6794
+  when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch.yml
+  vars:
+    update: XS65ESP1033
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX212858/XS65ESP1033.zip
+    uuid: 4eb321c1-2214-45aa-ba10-5bc6d48c7d11
+  tags: update,XS65ESP1,XS65ESP1033
+  when: updates.stdout.find('{{ update }}') == -1
