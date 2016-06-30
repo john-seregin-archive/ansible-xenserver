@@ -10,7 +10,7 @@ galaxy_info:
   - name: Citrix XenServer
      versions:
   #  - all
-     - 6.5
+     - 6_5
 
 dependencies: []
   
