@@ -2,14 +2,14 @@
 galaxy_info:
   author: John Seregin
   description: Install, config and update Citrix XenServer
-  company: XenServer
+  company: 
   license: GPLv2
   min_ansible_version: 1.2
   platforms:
   - name: Citrix XenServer
     versions:
     - 6.5
-  tags:
+  categories:
   - xen
   - xenserver
   - citrix
