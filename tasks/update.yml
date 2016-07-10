@@ -201,3 +201,12 @@
     uuid: 4eb321c1-2214-45aa-ba10-5bc6d48c7d11
   tags: update,XS65ESP1,XS65ESP1033
   when: updates.stdout.find('{{ update }}') == -1
+
+- include: xe-patch
+  vars:
+    update: XS70E004
+    url: http://support.citrix.com/supportkc/filedownload?uri=/filedownload/CTX214305/XS70E004.zip
+    uuid: 561b0a27-f37e-4a91-9823-56c8597f8161
+  tags: update,XS70E,XS70E004
+  when: updates.stdout.find('{{ update }}') == -1
+  

@@ -9,6 +9,7 @@ galaxy_info:
   - name: Citrix XenServer
     versions:
     - 6.5
+    - 7
   categories:
   - xen
   - xenserver
